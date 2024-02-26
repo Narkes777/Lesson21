@@ -6,4 +6,8 @@
     <p>---------</p>
     <p><a href="{% url 'post_update' pk=post.pk %}">Обновить</a></p>
     <p><a href="{% url 'post_delete' pk=post.pk %}">Удалить</a></p>
+    <p><a href="/posts/{{ post.pk }}/delete">Удалить</a></p>
+    <p>Ссылка: {% url 'post_delete' pk=post.pk</p>
 {% endblock %}
+
+
